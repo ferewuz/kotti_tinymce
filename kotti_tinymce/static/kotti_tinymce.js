@@ -3,8 +3,7 @@
   window.kottibrowser = function(field_name, url, type, win) {
     var kotti_url;
     kotti_url = window.location.toString();
-    kotti_url = kotti_url.replace(/@@edit/, "@@kottibrowser");
-    kotti_url = kotti_url.replace(/add_document/, "@@kottibrowser");
+    kotti_url = kotti_url.replace(/\/[^\/]+$/, "/@@kottibrowser");
     if (kotti_url.indexOf("?") < 0) {
       kotti_url = kotti_url + "?type=" + type;
     } else {
