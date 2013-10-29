@@ -4,7 +4,7 @@ import json
 
 from fanstatic import Library
 from fanstatic import Resource
-from js.tinymce import tinymce
+from js.deform import tinymce
 from kotti.resources import Content
 from kotti.resources import File
 from kotti.resources import Image
